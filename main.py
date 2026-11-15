@@ -28,9 +28,9 @@ logger=logging.getLogger(__name__)
 load_dotenv()
 
 
-API_KEY=getenv("OPENROUTER_Api_Token")
+API_KEY=getenv("OPENROUTER_API_TOKEN")
 TOKEN=getenv("BOT_TOKEN")
-# Создаем клиента (он сам подхватит ChatGPT_API_KEY из .env или передай ключ явно)
+
 ai_client = AsyncOpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=API_KEY,
